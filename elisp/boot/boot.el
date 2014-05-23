@@ -18,7 +18,6 @@
 ;; multiple cursors
 ;; yasnippet
 ;; smart tab
-;; autopair
 ;; sourcepawn
 ;; mingus
 ;; markdown
@@ -33,5 +32,4 @@
 ;; quack / geiser
 ;; haskell
 ;; auctex
-;; paredit
 ;; flymake
