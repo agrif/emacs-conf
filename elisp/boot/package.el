@@ -16,4 +16,8 @@
   "Auto fetch and install agrif-approved packages."
   (interactive)
   (package-refresh-contents)
-  (mapc 'package-install packages))
+  (mapc (lambda (s) 
+	  (if (not (package-installed-p s))
+	      (package-install s)))
+	packages)
+  (message "Done."))
