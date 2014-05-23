@@ -18,5 +18,4 @@
 ;; PACKAGED todo:
 ;; multiple cursors
 ;; yasnippet
-;; smart tab
 ;; auctex

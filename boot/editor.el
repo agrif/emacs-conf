@@ -1,3 +1,18 @@
+;; completion
+(require-package 'company)
+(eval-after-load "company-autoloads"
+  '(progn
+     (setq company-idle-delay nil)
+     (defun tab-indent-or-complete ()
+       (interactive)
+       (if (minibufferp)
+	   (minibuffer-complete)
+	 (if (looking-at "\\_>")
+	     (company-complete)
+	   (indent-according-to-mode))))
+     (global-set-key (kbd "TAB") 'tab-indent-or-complete)
+     (global-company-mode)))
+
 ;; eval-and-replace bind to C-x C-e
 (defun eval-and-replace ()
   "Replace the preceding sexp with its value."
