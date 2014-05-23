@@ -6,6 +6,7 @@
 (load "boot/editor")
 (load "boot/compile")
 (load "boot/applications")
+(load "boot/git")
 (load "boot/python")
 
 ;; start the emacs server
@@ -15,8 +16,6 @@
 
 ;; PACKAGED todo:
 ;; multiple cursors
-;; git
-;(load "boot/git")
 ;; yasnippet
 ;; smart tab
 ;; autopair
