@@ -18,11 +18,8 @@
 ;; multiple cursors
 ;; yasnippet
 ;; smart tab
-;; sourcepawn
 ;; mingus
 ;; mathematica ??
-;; word count mode
-;; gist
 ;; vala
 ;; quack / geiser
 ;; auctex
