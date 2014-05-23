@@ -17,5 +17,5 @@
  )
 
 ;; call out to the local setup
-(add-to-list 'load-path "~/.emacs.d/elisp/")
+(add-to-list 'load-path "~/.emacs.d/")
 (load "boot/boot")
