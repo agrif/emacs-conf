@@ -1,3 +1,4 @@
 ;; pianobar
 (require-package 'pianobar)
-(autoload 'pianobar "pianobar" nil t)
+(eval-after-load "pianobar-autoloads"
+  '(autoload 'pianobar "pianobar" nil t))
