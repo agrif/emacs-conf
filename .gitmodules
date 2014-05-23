@@ -1,0 +1,3 @@
+[submodule "extern/mingus"]
+	path = extern/mingus
+	url = https://github.com/pft/mingus.git

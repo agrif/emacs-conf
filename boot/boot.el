@@ -18,8 +18,6 @@
 ;; multiple cursors
 ;; yasnippet
 ;; smart tab
-;; mingus
 ;; mathematica ??
 ;; quack / geiser
 ;; auctex
-;; flymake
