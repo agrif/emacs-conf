@@ -8,6 +8,7 @@
 (load "boot/applications")
 (load "boot/git")
 (load "boot/python")
+(load "boot/lisp")
 
 ;; start the emacs server
 (require 'server)
@@ -18,5 +19,4 @@
 ;; multiple cursors
 ;; yasnippet
 ;; smart tab
-;; quack / geiser
 ;; auctex
