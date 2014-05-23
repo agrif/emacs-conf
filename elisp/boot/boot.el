@@ -1,8 +1,12 @@
+;; others tend to use these, so load them first
 (load "boot/util")
+(load "boot/package")
+
 (load "boot/modemap")
-(load "boot/compile")
-(load "boot/python")
 (load "boot/editor")
+(load "boot/compile")
+(load "boot/applications")
+(load "boot/python")
 
 ;; start the emacs server
 (require 'server)
@@ -21,7 +25,6 @@
 ;; markdown
 ;; glsl
 ;; mathematica ??
-;; pianobar
 ;; word count mode
 ;; gist
 ;; rust
