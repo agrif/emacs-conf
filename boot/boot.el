@@ -20,7 +20,6 @@
 ;; smart tab
 ;; mingus
 ;; mathematica ??
-;; vala
 ;; quack / geiser
 ;; auctex
 ;; flymake
