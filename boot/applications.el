@@ -9,3 +9,8 @@
 (add-to-list 'load-path "~/.emacs.d/extern/mingus/")
 (autoload 'mingus "mingus" "emacs MPD plugin" t)
 (global-set-key (kbd "C-c m") 'mingus)
+
+;; mathematica (also not in repos)
+(autoload 'mathematica "extern/mathematica" "Mathematica Interaction Mode" t)
+(if (anduril-p)
+    (setq mathematica-command-line "/Applications/Mathematica.app/Contents/MacOS/MathKernel"))

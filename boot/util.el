@@ -1,5 +1,11 @@
 ;; general emacs lisp code utilities
 
+(defun get-hostname ()
+  (car (split-string system-name "[.]")))
+
+(defun anduril-p ()
+  (string-equal (get-hostname) "anduril"))
+
 ;; camelcase converter
 (defun un-cc-string (s &optional sep start)
   "Convert CamelCase string S to lower case with word separator SEP.

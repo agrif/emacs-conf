@@ -18,6 +18,5 @@
 ;; multiple cursors
 ;; yasnippet
 ;; smart tab
-;; mathematica ??
 ;; quack / geiser
 ;; auctex
