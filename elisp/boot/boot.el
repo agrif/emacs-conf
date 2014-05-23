@@ -2,7 +2,7 @@
 (load "boot/util")
 (load "boot/package")
 
-(load "boot/modemap")
+(load "boot/majormodes")
 (load "boot/editor")
 (load "boot/compile")
 (load "boot/applications")
@@ -20,16 +20,10 @@
 ;; smart tab
 ;; sourcepawn
 ;; mingus
-;; markdown
-;; glsl
 ;; mathematica ??
 ;; word count mode
 ;; gist
-;; rust
 ;; vala
-;; io
-;; yaml
 ;; quack / geiser
-;; haskell
 ;; auctex
 ;; flymake
