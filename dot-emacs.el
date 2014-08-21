@@ -12,6 +12,7 @@
  '(initial-major-mode (quote emacs-lisp-mode))
  '(make-backup-files nil)
  '(menu-bar-mode nil)
+ '(safe-local-variable-values (quote ((compilation-search-path "/home/agrif/devel/minecraft/overviewer/src/"))))
  '(scroll-bar-mode nil)
  '(tab-width 4)
  '(tool-bar-mode nil))
