@@ -10,6 +10,7 @@
 (require-package 'io-mode)
 (require-package 'yaml-mode)
 (require-package 'haskell-mode)
+(require-package 'cython-mode)
 
 ;; supposed to be in marmalade, but not :(
 (autoload 'vala-mode "extern/vala-mode" "Major mode for Vala code." t)
