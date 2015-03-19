@@ -11,6 +11,8 @@
 (require-package 'yaml-mode)
 (require-package 'haskell-mode)
 (require-package 'cython-mode)
+(require-package 'dockerfile-mode)
+(require-package 'nginx-mode)
 
 ;; supposed to be in marmalade, but not :(
 (autoload 'vala-mode "extern/vala-mode" "Major mode for Vala code." t)
