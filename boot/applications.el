@@ -16,4 +16,4 @@
     (setq mathematica-command-line "/Applications/Mathematica.app/Contents/MacOS/MathKernel"))
 
 ;; proof-general (still not in repos boo)
-(load-file "extern/proofgeneral/generic/proof-site.el")
+(load-file "~/.emacs.d/extern/proofgeneral/generic/proof-site.el")
