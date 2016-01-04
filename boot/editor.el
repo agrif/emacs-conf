@@ -31,3 +31,6 @@
   '(progn
      (require 'autopair)
      (autopair-global-mode)))
+
+;; lorem ipsum
+(require-package 'lorem-ipsum)
