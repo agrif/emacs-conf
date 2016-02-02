@@ -9,6 +9,7 @@
 (load "boot/git")
 (load "boot/python")
 (load "boot/lisp")
+(load "boot/rust")
 
 ;; squelch the warning about .emacs.d in load path
 (defadvice display-warning

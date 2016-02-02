@@ -32,5 +32,8 @@
      (require 'autopair)
      (autopair-global-mode)))
 
+;; flycheck
+(require-package 'flycheck)
+
 ;; lorem ipsum
 (require-package 'lorem-ipsum)

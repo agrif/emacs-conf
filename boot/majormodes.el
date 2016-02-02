@@ -6,7 +6,6 @@
 
 (require-package 'markdown-mode)
 (require-package 'glsl-mode)
-(require-package 'rust-mode)
 (require-package 'io-mode)
 (require-package 'yaml-mode)
 (require-package 'haskell-mode)
