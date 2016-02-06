@@ -9,11 +9,14 @@
 (require-package 'io-mode)
 (require-package 'yaml-mode)
 (require-package 'haskell-mode)
-(require-package 'purescript-mode)
 (require-package 'elm-mode)
 (require-package 'cython-mode)
 (require-package 'dockerfile-mode)
 (require-package 'nginx-mode)
+
+;; needs indentation mode set
+(require-package 'purescript-mode)
+(add-hook 'purescript-mode-hook #'turn-on-purescript-indentation)
 
 ;; supposed to be in marmalade, but not :(
 (autoload 'vala-mode "extern/vala-mode" "Major mode for Vala code." t)
