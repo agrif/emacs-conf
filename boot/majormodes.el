@@ -9,6 +9,8 @@
 (require-package 'io-mode)
 (require-package 'yaml-mode)
 (require-package 'haskell-mode)
+(require-package 'purescript-mode)
+(require-package 'elm-mode)
 (require-package 'cython-mode)
 (require-package 'dockerfile-mode)
 (require-package 'nginx-mode)
