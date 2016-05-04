@@ -8,7 +8,6 @@
 (require-package 'glsl-mode)
 (require-package 'io-mode)
 (require-package 'yaml-mode)
-(require-package 'haskell-mode)
 (require-package 'elm-mode)
 (require-package 'cython-mode)
 (require-package 'dockerfile-mode)

@@ -11,6 +11,7 @@
 (load "boot/python")
 (load "boot/lisp")
 (load "boot/rust")
+(load "boot/haskell")
 
 ;; squelch the warning about .emacs.d in load path
 (defadvice display-warning
