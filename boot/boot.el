@@ -5,6 +5,7 @@
 (load "boot/majormodes")
 (load "boot/editor")
 (load "boot/compile")
+(load "boot/theme")
 (load "boot/applications")
 (load "boot/git")
 (load "boot/python")
