@@ -13,6 +13,11 @@
 (load "boot/rust")
 (load "boot/haskell")
 
+;; otherwise, .v would mean coq
+(setq auto-mode-alist
+      (remove (rassoc 'coq-mode auto-mode-alist) auto-mode-alist))
+(add-to-list 'auto-mode-alist '("\\.v\\'" . verilog-mode))
+
 ;; squelch the warning about .emacs.d in load path
 (defadvice display-warning
     (around no-warn-.emacs.d-in-load-path (type message &rest unused) activate)
