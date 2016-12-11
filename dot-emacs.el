@@ -1,3 +1,6 @@
+; quiet down package manager (this is done later)
+;(package-initialize)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -15,7 +18,6 @@
  '(proof-disappearing-proofs t)
  '(proof-splash-enable nil)
  '(proof-three-window-enable nil)
- '(safe-local-variable-values (quote ((compilation-search-path "/home/agrif/devel/minecraft/overviewer/src/"))))
  '(scroll-bar-mode nil)
  '(tab-width 4)
  '(tool-bar-mode nil))
