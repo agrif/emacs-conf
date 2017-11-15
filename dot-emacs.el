@@ -9,7 +9,6 @@
  '(c-basic-offset 4)
  '(c-default-style "bsd")
  '(geiser-mode-smart-tab-p t)
- '(haskell-mode-hook (quote (turn-on-haskell-indent)))
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-major-mode (quote emacs-lisp-mode))
