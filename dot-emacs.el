@@ -28,5 +28,7 @@
  )
 
 ;; call out to the local setup
-(add-to-list 'load-path "~/.emacs.d/")
+;; append .emacs.d to load path so that there can be no conflicts
+;; https://stackoverflow.com/questions/24779041/disable-warning-about-emacs-d-in-load-path
+(add-to-list 'load-path (expand-file-name "~/.emacs.d") t)
 (load "boot/boot")

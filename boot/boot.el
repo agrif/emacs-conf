@@ -19,11 +19,12 @@
 (add-to-list 'auto-mode-alist '("\\.v\\'" . verilog-mode))
 
 ;; squelch the warning about .emacs.d in load path
+;; https://stackoverflow.com/questions/24779041/disable-warning-about-emacs-d-in-load-path
 (defadvice display-warning
     (around no-warn-.emacs.d-in-load-path (type message &rest unused) activate)
   "Ignore the warning about `.emacs.d' in `load-path'."
   (unless (and (eq type 'initialization)
-               (string-prefix-p "Your `load-path' seems to contain\nyour `.emacs.d' directory"
+               (string-prefix-p "Your ‘load-path’ seems to contain\nyour ‘.emacs.d’ directory"
                                 message t))
     ad-do-it))
 
