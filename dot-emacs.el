@@ -19,7 +19,9 @@
  '(proof-three-window-enable nil)
  '(scroll-bar-mode nil)
  '(tab-width 4)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(verilog-auto-endcomments nil)
+ '(verilog-auto-newline nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
