@@ -12,6 +12,7 @@
 (require-package 'cython-mode)
 (require-package 'dockerfile-mode)
 (require-package 'nginx-mode)
+(require-package 'toml-mode)
 
 ;; needs indentation mode set
 (require-package 'purescript-mode)
