@@ -5,7 +5,6 @@
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 4)
  '(c-default-style "bsd")
- '(geiser-mode-smart-tab-p t)
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-major-mode (quote emacs-lisp-mode))

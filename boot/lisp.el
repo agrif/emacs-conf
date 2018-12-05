@@ -1,9 +1,9 @@
 ;; paredit for schemes
-(require-package 'paredit)
-(eval-after-load "paredit-autoloads"
-  '(progn
-     (add-hook 'lisp-mode-hook 'enable-paredit-mode)
-     (add-hook 'scheme-mode-hook 'enable-paredit-mode)
-     (add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)))
+(use-package paredit
+  :hook (lisp-mode . enable-paredit-mode)
+  :hook (scheme-mode . enable-paredit-mode)
+  :hook (emacs-lisp-mode . enable-paredit-mode))
 
-(require-package 'geiser)
+;; geiser!
+(use-package geiser
+  :custom (geiser-mode-smart-tab-p t))
