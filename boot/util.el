@@ -1,5 +1,9 @@
 ;; general emacs lisp code utilities
 
+;; make sure our path is setup
+(use-package exec-path-from-shell
+  :hook (after-init . exec-path-from-shell-initialize))
+
 (defun get-hostname ()
   (car (split-string system-name "[.]")))
 

@@ -5,7 +5,7 @@
 ;; language server protocol support
 (use-package lsp-mode)
 (use-package lsp-ui
-  :hook (lsp-mode . lsp_ui_mode))
+  :hook (lsp-mode . lsp-ui-mode))
 (use-package company-lsp
   :demand ;; or it would never be loaded
   :after (company)
