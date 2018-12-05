@@ -1,32 +1,22 @@
 ;; others tend to use these, so load them first
-(load "boot/util")
-(load "boot/package")
+(load "~/.emacs.d/boot/util.el")
+(load "~/.emacs.d/boot/package.el")
 
-(load "boot/majormodes")
-(load "boot/editor")
-(load "boot/compile")
-(load "boot/theme")
-(load "boot/applications")
-(load "boot/git")
-(load "boot/python")
-(load "boot/lisp")
-(load "boot/rust")
-(load "boot/haskell")
+(load "~/.emacs.d/boot/majormodes.el")
+(load "~/.emacs.d/boot/editor.el")
+(load "~/.emacs.d/boot/compile.el")
+(load "~/.emacs.d/boot/theme.el")
+(load "~/.emacs.d/boot/applications.el")
+(load "~/.emacs.d/boot/git.el")
+(load "~/.emacs.d/boot/python.el")
+(load "~/.emacs.d/boot/lisp.el")
+(load "~/.emacs.d/boot/rust.el")
+(load "~/.emacs.d/boot/haskell.el")
 
 ;; otherwise, .v would mean coq
 (setq auto-mode-alist
       (remove (rassoc 'coq-mode auto-mode-alist) auto-mode-alist))
 (add-to-list 'auto-mode-alist '("\\.v\\'" . verilog-mode))
-
-;; squelch the warning about .emacs.d in load path
-;; https://stackoverflow.com/questions/24779041/disable-warning-about-emacs-d-in-load-path
-(defadvice display-warning
-    (around no-warn-.emacs.d-in-load-path (type message &rest unused) activate)
-  "Ignore the warning about `.emacs.d' in `load-path'."
-  (unless (and (eq type 'initialization)
-               (string-prefix-p "Your ‘load-path’ seems to contain\nyour ‘.emacs.d’ directory"
-                                message t))
-    ad-do-it))
 
 ;; start the emacs server
 (require 'server)
