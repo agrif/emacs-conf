@@ -23,6 +23,8 @@
 
 ;; if we mention it, default to trying to install it
 (setq use-package-always-ensure t)
+;; if we mention it, default to loading deferred
+(setq use-package-always-defer t)
 
 ;;
 ;; Everything after this point is deprecated! Use use-package instead.

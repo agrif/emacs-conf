@@ -1,12 +1,10 @@
 ;; completion
 (use-package company
-  :defer t
   :hook (prog-mode . company-mode))
 
 ;; language server protocol support
-(use-package lsp-mode :defer t)
+(use-package lsp-mode)
 (use-package lsp-ui
-  :defer t
   :hook (lsp-mode . lsp_ui_mode))
 (use-package company-lsp
   :demand ;; or it would never be loaded
@@ -15,12 +13,12 @@
 
 ;; a few other fun things
 (use-package autopair
-  :defer t
   :hook (prog-mode . autopair-mode))
 (use-package flycheck
-  :defer t
-  :hook (prog-mode . flycheck-mode))
-(use-package lorem-ipsum :defer t)
+  :hook (prog-mode . flycheck-mode)
+  :custom
+  (flycheck-disabled-checkers '(emacs-lisp-checkdoc) "Turn off documentation checks for elisp."))
+(use-package lorem-ipsum)
 
 ;; eval-and-replace bind to C-x C-e
 (defun eval-and-replace ()
