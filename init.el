@@ -23,6 +23,7 @@
 (load "~/.emacs.d/boot/haskell.el")
 
 ;; otherwise, .v would mean coq
+;; this is here to override proof general, loaded earlier
 (setq auto-mode-alist
       (remove (rassoc 'coq-mode auto-mode-alist) auto-mode-alist))
 (add-to-list 'auto-mode-alist '("\\.v\\'" . verilog-mode))
