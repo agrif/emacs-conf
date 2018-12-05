@@ -1,17 +1,26 @@
 ;; completion
-(require-package 'company)
-(eval-after-load "company-autoloads"
-  '(progn
-     (setq company-idle-delay nil)
-     (defun tab-indent-or-complete ()
-       (interactive)
-       (if (minibufferp)
-	   (minibuffer-complete)
-	 (if (looking-at "\\_>")
-	     (company-complete)
-	   (indent-according-to-mode))))
-     (global-set-key (kbd "TAB") 'tab-indent-or-complete)
-     (global-company-mode)))
+(use-package company
+  :defer t
+  :hook (prog-mode . company-mode))
+
+;; language server protocol support
+(use-package lsp-mode :defer t)
+(use-package lsp-ui
+  :defer t
+  :hook (lsp-mode . lsp_ui_mode))
+(use-package company-lsp
+  :demand ;; or it would never be loaded
+  :after (company)
+  :config (push 'company-lsp company-backends))
+
+;; a few other fun things
+(use-package autopair
+  :defer t
+  :hook (prog-mode . autopair-mode))
+(use-package flycheck
+  :defer t
+  :hook (prog-mode . flycheck-mode))
+(use-package lorem-ipsum :defer t)
 
 ;; eval-and-replace bind to C-x C-e
 (defun eval-and-replace ()
@@ -24,16 +33,3 @@
     (error (message "Invalid expression")
            (insert (current-kill 0)))))
 (global-set-key (kbd "C-x C-e") 'eval-and-replace)
-
-;; autopair
-(require-package 'autopair)
-(eval-after-load "autopair-autoloads"
-  '(progn
-     (require 'autopair)
-     (autopair-global-mode)))
-
-;; flycheck
-(require-package 'flycheck)
-
-;; lorem ipsum
-(require-package 'lorem-ipsum)
