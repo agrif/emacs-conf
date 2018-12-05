@@ -11,9 +11,6 @@
  '(initial-major-mode (quote emacs-lisp-mode))
  '(make-backup-files nil)
  '(menu-bar-mode nil)
- '(proof-disappearing-proofs t)
- '(proof-splash-enable nil)
- '(proof-three-window-enable nil)
  '(safe-local-variable-values
    (quote
     ((compilation-search-path "/home/agrif/devel/minecraft/overviewer/src/"))))

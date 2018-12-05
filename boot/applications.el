@@ -1,19 +1,18 @@
 ;; pianobar
-(require-package 'pianobar)
-(eval-after-load "pianobar-autoloads"
-  '(progn
-     (autoload 'pianobar "pianobar" nil t)
-     (global-set-key (kbd "C-c p") 'pianobar)))
+(use-package pianobar
+  :bind ("C-c p" . pianobar))
 
-;; mingus (not in repos :( )
-(add-to-list 'load-path "~/.emacs.d/extern/mingus/")
-(autoload 'mingus "mingus" "emacs MPD plugin" t)
-(global-set-key (kbd "C-c m") 'mingus)
+;; mingus
+(use-package mingus
+  :bind ("C-c m" . mingus))
 
-;; mathematica (also not in repos)
-(autoload 'mathematica "extern/mathematica" "Mathematica Interaction Mode" t)
-(if (anduril-p)
-    (setq mathematica-command-line "/Applications/Mathematica.app/Contents/MacOS/MathKernel"))
+;; mathematica
+(use-package wolfram-mode
+  :custom (wolfram-program "/Applications/Mathematica.app/Contents/MacOS/MathKernel"))
 
-;; proof-general (still not in repos boo)
-(load-file "~/.emacs.d/extern/proofgeneral/generic/proof-site.el")
+;; proof-general
+(use-package proof-general
+  :custom
+  (proof-disappearing-proofs t)
+  (proof-splash-enable nil)
+  (proof-three-window-enable nil))
