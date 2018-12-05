@@ -4,7 +4,6 @@
                             "cargo build"))))
 (use-package flycheck-rust
   :hook (rust-mode . flycheck-rust-setup))
-(use-package rustfmt)
 (use-package cargo
   :hook (rust-mode . cargo-minor-mode))
 (use-package lsp-rust
