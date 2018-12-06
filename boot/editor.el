@@ -8,7 +8,6 @@
   :hook (lsp-mode . lsp-ui-mode))
 (use-package company-lsp
   :demand ;; or it would never be loaded
-  :after (company)
   :config (push 'company-lsp company-backends))
 
 ;; a few other fun things

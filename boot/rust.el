@@ -6,6 +6,9 @@
   :hook (rust-mode . flycheck-rust-setup))
 (use-package cargo
   :hook (rust-mode . cargo-minor-mode))
+
+;; lsp-rust is somewhat awful, so be caeful
 (use-package lsp-rust
-  :hook (rust-mode . lsp-rust-enable)
-  :config (setq lsp-rust-rls-command '("rustup" "run" "nightly" "rls")))
+  :demand
+  :hook (rust-mode . lsp-rust-enable))
+(require 'lsp-rust)
