@@ -12,3 +12,8 @@
   :demand
   :hook (rust-mode . lsp-rust-enable))
 (require 'lsp-rust)
+
+;; racer is still very useful
+(use-package racer
+  :hook (rust-mode . racer-mode)
+  :hook (racer-mode . eldoc-mode))
