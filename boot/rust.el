@@ -5,6 +5,7 @@
 (use-package flycheck-rust
   :hook (rust-mode . flycheck-rust-setup))
 (use-package cargo
+  :diminish cargo-minor-mode
   :hook (rust-mode . cargo-minor-mode))
 
 ;; lsp-rust is somewhat awful, so be caeful
@@ -15,5 +16,6 @@
 
 ;; racer is still very useful
 (use-package racer
+  :diminish
   :hook (rust-mode . racer-mode)
   :hook (racer-mode . eldoc-mode))

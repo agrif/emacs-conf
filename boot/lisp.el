@@ -1,5 +1,6 @@
 ;; paredit for schemes
 (use-package paredit
+  :diminish
   :hook (lisp-mode . enable-paredit-mode)
   :hook (scheme-mode . enable-paredit-mode)
   :hook (emacs-lisp-mode . enable-paredit-mode))

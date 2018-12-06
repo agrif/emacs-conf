@@ -1,5 +1,6 @@
 ;; completion
 (use-package company
+  :diminish
   :hook (prog-mode . company-mode)
   ;; company default keys are a bit... weird
   ;; fix that!
@@ -31,6 +32,7 @@
 
 ;; language server protocol support
 (use-package lsp-mode)
+(diminish 'eldoc-mode)
 
 (use-package lsp-ui
   :hook (lsp-mode . lsp-ui-mode)
@@ -44,6 +46,7 @@
 
 ;; a few other fun things
 (use-package autopair
+  :diminish
   :hook (prog-mode . autopair-mode))
 (use-package flycheck
   :hook (prog-mode . flycheck-mode)
