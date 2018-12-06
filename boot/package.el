@@ -25,3 +25,11 @@
 (setq use-package-always-ensure t)
 ;; if we mention it, default to loading deferred
 (setq use-package-always-defer t)
+
+;; do automatic package updates
+(use-package auto-package-update
+  :demand
+  :config
+  (setq auto-package-update-delete-old-versions t)
+  (setq auto-package-update-hide-results t)
+  (auto-package-update-maybe))
