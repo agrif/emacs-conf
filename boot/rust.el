@@ -11,7 +11,9 @@
 ;; lsp-rust is somewhat awful, so be caeful
 (use-package lsp-rust
   :demand
-  :hook (rust-mode . lsp-rust-enable))
+  ;; this is a little bit jank right now, enable later
+  ;;:hook (rust-mode . lsp-rust-enable)
+  )
 (require 'lsp-rust)
 
 ;; racer is still very useful
