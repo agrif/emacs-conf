@@ -24,8 +24,8 @@
   :bind* ("M-TAB" . company-manual-begin)
 
   :config
-  (setq company-idle-delay 0)
-  (setq company-minimum-prefix-length 1)
+  (setq company-idle-delay 1)
+  (setq company-minimum-prefix-length 3)
   (setq company-tooltip-limit 10)
   (setq company-frontends '(company-pseudo-tooltip-frontend))
   (setq company-show-numbers t))
