@@ -17,3 +17,4 @@
 (use-package purescript-mode
   ;; use indentation minor mode
   :hook (purescript-mode . turn-on-purescript-indentation))
+(use-package jinja2-mode)
