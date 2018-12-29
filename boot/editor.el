@@ -1,3 +1,9 @@
+;; editorconfig.org
+(use-package editorconfig
+  :diminish
+  :config
+  (editorconfig-mode 1))
+
 ;; completion
 (use-package company
   :diminish
