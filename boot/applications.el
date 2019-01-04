@@ -16,3 +16,6 @@
   (proof-disappearing-proofs t)
   (proof-splash-enable nil)
   (proof-three-window-enable nil))
+
+;; yes really
+(use-package fireplace)
