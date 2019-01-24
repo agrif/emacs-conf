@@ -9,12 +9,12 @@
   :hook (rust-mode . cargo-minor-mode))
 
 ;; lsp-rust is somewhat awful, so be caeful
-(use-package lsp-rust
-  :demand
-  ;; this is a little bit jank right now, enable later
-  ;;:hook (rust-mode . lsp-rust-enable)
-  )
-(require 'lsp-rust)
+;; (use-package lsp-rust
+;;   :demand
+;;   ;; this is a little bit jank right now, enable later
+;;   ;;:hook (rust-mode . lsp-rust-enable)
+;;   )
+;(require 'lsp-rust)
 
 ;; racer is still very useful
 (use-package racer

@@ -8,7 +8,7 @@
 (use-package glsl-mode)
 (use-package io-mode)
 (use-package yaml-mode)
-(use-package elm-mode)
+;;(use-package elm-mode)
 (use-package cython-mode)
 (use-package dockerfile-mode)
 (use-package nginx-mode)
