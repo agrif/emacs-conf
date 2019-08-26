@@ -5,11 +5,17 @@
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 4)
  '(c-default-style "bsd")
+ '(flycheck-disabled-checkers (quote (emacs-lisp-checkdoc)))
+ '(flycheck-python-pycompile-executable "python3")
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-major-mode (quote emacs-lisp-mode))
+ '(lsp-ui-doc-max-height 20 t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
+ '(package-selected-packages
+   (quote
+    (platformio-mode intero haskell-mode racer cargo flycheck-rust rust-mode geiser paredit git-link magit gist fireplace proof-general wolfram-mode mingus pianobar powerline moe-theme lorem-ipsum flycheck autopair company-lsp lsp-ui lsp-mode company editorconfig jinja2-mode purescript-mode vala-mode toml-mode nginx-mode dockerfile-mode cython-mode yaml-mode io-mode glsl-mode markdown-mode exec-path-from-shell diminish auto-package-update use-package)))
  '(safe-local-variable-values
    (quote
     ((compilation-search-path "/home/agrif/devel/minecraft/overviewer/src/"))))
