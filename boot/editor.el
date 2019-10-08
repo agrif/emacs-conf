@@ -51,9 +51,7 @@
   :config (push 'company-lsp company-backends))
 
 ;; a few other fun things
-(use-package autopair
-  :diminish
-  :hook (prog-mode . autopair-mode))
+(electric-pair-mode 1)
 (use-package flycheck
   :hook (prog-mode . flycheck-mode)
   :custom
