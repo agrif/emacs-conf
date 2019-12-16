@@ -15,7 +15,7 @@
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (platformio-mode intero haskell-mode racer cargo flycheck-rust rust-mode geiser paredit git-link magit gist fireplace proof-general wolfram-mode mingus pianobar powerline moe-theme lorem-ipsum flycheck company-lsp lsp-ui lsp-mode company editorconfig jinja2-mode purescript-mode vala-mode toml-mode nginx-mode dockerfile-mode cython-mode yaml-mode io-mode glsl-mode markdown-mode exec-path-from-shell diminish auto-package-update use-package)))
+    (platformio-mode intero haskell-mode racer cargo flycheck-rust rust-mode geiser paredit git-link magit gist fireplace proof-general wolfram-mode mingus pianobar powerline moe-theme lorem-ipsum flycheck autopair company-lsp lsp-ui lsp-mode company editorconfig jinja2-mode purescript-mode vala-mode toml-mode nginx-mode dockerfile-mode cython-mode yaml-mode io-mode glsl-mode markdown-mode exec-path-from-shell diminish auto-package-update use-package)))
  '(safe-local-variable-values
    (quote
     ((compilation-search-path "/home/agrif/devel/minecraft/overviewer/src/"))))
@@ -23,7 +23,16 @@
  '(tab-width 4)
  '(tool-bar-mode nil)
  '(verilog-auto-endcomments nil)
- '(verilog-auto-newline nil))
+ '(verilog-auto-lineup (quote ignore))
+ '(verilog-auto-newline nil)
+ '(verilog-case-indent 4)
+ '(verilog-cexp-indent 4)
+ '(verilog-indent-level 4)
+ '(verilog-indent-level-behavioral 4)
+ '(verilog-indent-level-declaration 4)
+ '(verilog-indent-level-directive 4)
+ '(verilog-indent-level-module 4)
+ '(verilog-indent-lists nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
