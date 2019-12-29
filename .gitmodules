@@ -1,0 +1,3 @@
+[submodule "boot/ferm-mode"]
+	path = boot/extern/ferm-mode
+	url = https://github.com/danil/ferm-mode.git

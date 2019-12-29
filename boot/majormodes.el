@@ -18,3 +18,7 @@
   ;; use indentation minor mode
   :hook (purescript-mode . turn-on-purescript-indentation))
 (use-package jinja2-mode)
+
+;; not in the package repos!
+(add-to-list 'load-path "~/.emacs.d/boot/extern/ferm-mode")
+(require 'ferm-mode)
