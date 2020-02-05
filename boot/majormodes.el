@@ -22,3 +22,15 @@
 ;; not in the package repos!
 (add-to-list 'load-path "~/.emacs.d/boot/extern/ferm-mode")
 (require 'ferm-mode)
+
+(defun reformat-verilog-on-auto ()
+  (verilog-indent-buffer))
+(defun undo-verilog-autos (&rest args)
+  (when (eq major-mode 'verilog-mode)
+    (verilog-delete-auto)
+    (set-buffer-modified-p nil)))
+(use-package verilog-mode
+  :hook ((verilog-auto . reformat-verilog-on-auto)
+         (after-save . undo-verilog-autos))
+  :init
+  (add-hook 'after-load-functions #'undo-verilog-autos))

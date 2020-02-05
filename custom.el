@@ -10,7 +10,7 @@
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-major-mode (quote emacs-lisp-mode))
- '(lsp-ui-doc-max-height 20)
+ '(lsp-ui-doc-max-height 20 t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
@@ -22,9 +22,13 @@
  '(scroll-bar-mode nil)
  '(tab-width 4)
  '(tool-bar-mode nil)
+ '(verilog-auto-delete-trailing-whitespace t)
  '(verilog-auto-endcomments nil)
+ '(verilog-auto-inst-param-value t)
+ '(verilog-auto-inst-vector nil)
  '(verilog-auto-lineup (quote ignore))
  '(verilog-auto-newline nil)
+ '(verilog-auto-save-policy (quote force))
  '(verilog-case-indent 4)
  '(verilog-cexp-indent 4)
  '(verilog-indent-level 4)
@@ -32,7 +36,7 @@
  '(verilog-indent-level-declaration 4)
  '(verilog-indent-level-directive 4)
  '(verilog-indent-level-module 4)
- '(verilog-indent-lists nil))
+ '(verilog-indent-lists t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
