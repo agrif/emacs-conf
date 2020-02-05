@@ -10,12 +10,12 @@
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-major-mode (quote emacs-lisp-mode))
- '(lsp-ui-doc-max-height 20 t)
+ '(lsp-ui-doc-max-height 20)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
    (quote
-    (verilog-mode platformio-mode intero haskell-mode racer cargo flycheck-rust rust-mode geiser paredit git-link magit gist fireplace proof-general wolfram-mode mingus pianobar powerline moe-theme lorem-ipsum flycheck autopair company-lsp lsp-ui lsp-mode company editorconfig jinja2-mode purescript-mode vala-mode toml-mode nginx-mode dockerfile-mode cython-mode yaml-mode io-mode glsl-mode markdown-mode exec-path-from-shell diminish auto-package-update use-package)))
+    (bnf-mode verilog-mode platformio-mode intero haskell-mode racer cargo flycheck-rust rust-mode geiser paredit git-link magit gist fireplace proof-general wolfram-mode mingus pianobar powerline moe-theme lorem-ipsum flycheck autopair company-lsp lsp-ui lsp-mode company editorconfig jinja2-mode purescript-mode vala-mode toml-mode nginx-mode dockerfile-mode cython-mode yaml-mode io-mode glsl-mode markdown-mode exec-path-from-shell diminish auto-package-update use-package)))
  '(safe-local-variable-values
    (quote
     ((compilation-search-path "/home/agrif/devel/minecraft/overviewer/src/"))))
