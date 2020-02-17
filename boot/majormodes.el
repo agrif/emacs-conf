@@ -27,10 +27,10 @@
   (verilog-indent-buffer))
 (defun undo-verilog-autos (&rest args)
   (when (eq major-mode 'verilog-mode)
-    (verilog-delete-auto)
-    (set-buffer-modified-p nil)))
+    (let ((modified (buffer-modified-p)))
+      (verilog-delete-auto)
+      (set-buffer-modified-p modified))))
 (use-package verilog-mode
   :hook ((verilog-auto . reformat-verilog-on-auto)
-         (after-save . undo-verilog-autos))
-  :init
-  (add-hook 'after-load-functions #'undo-verilog-autos))
+         (after-save . undo-verilog-autos)
+         (find-file . undo-verilog-autos)))
