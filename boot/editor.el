@@ -57,6 +57,7 @@
   :custom
   (flycheck-disabled-checkers '(emacs-lisp-checkdoc) "Turn off documentation checks for elisp."))
 (use-package lorem-ipsum)
+(use-package string-inflection)
 
 ;; eval-and-replace bind to C-x C-e
 (defun eval-and-replace ()
