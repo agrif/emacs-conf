@@ -3,8 +3,12 @@
 
 ;; repo urls
 (setq package-archives 
-      '(("gnu" . "http://elpa.gnu.org/packages/")
-        ("melpa" . "http://melpa.org/packages/")))
+      '(("gnu" . "https://elpa.gnu.org/packages/")
+        ("melpa" . "https://melpa.org/packages/")))
+
+;; https on emacs < 26.x and gnutls 3.6.x needs this for some reason
+;; https://www.reddit.com/r/emacs/comments/cdf48c/failed_to_download_gnu_archive/ev1d3gk/
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
 ;; initialize here, since we don't in init.el
 (package-initialize)
