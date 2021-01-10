@@ -3,7 +3,7 @@
   :demand
   :config
   (load-theme 'moe-dark t)
-  (moe-theme-set-color 'orange))
+  (moe-theme-apply-color 'orange))
 
 ;; and powerline
 (use-package powerline
