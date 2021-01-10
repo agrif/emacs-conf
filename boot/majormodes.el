@@ -34,3 +34,25 @@
   :hook ((verilog-auto . reformat-verilog-on-auto)
          (after-save . undo-verilog-autos)
          (find-file . undo-verilog-autos)))
+
+;; https://stackoverflow.com/a/50855606
+(defun fix-asm-mode ()
+  ;; no electric semicolons
+  (local-unset-key (vector asm-comment-char))
+  ;; no electric indent on :
+  (electric-indent-local-mode) ; toggle off
+  ;; no asm mode you do not know better than the default
+  (setq tab-always-indent (default-value 'tab-always-indent))
+  (defun asm-calculate-indentation ()
+    (or
+     ;; labels go all the way left
+     (and (looking-at "[.@_[:word:]]+:") 0)
+     ;; triple-comments go all the way left
+     (and (looking-at "\\s<\\s<\\s<") 0)
+     ;; special directives go all the way left
+     (and (looking-at "c?global\\|section\\|org\\|seek\\|include\\|lib\\|define\\|defgroup\\|defvars\\|extern\\|if\\|ifdef\\|else\\|endif\\|module\\|public\\|default\\|align\\|INIT_..X") 0)
+     ;; single-comments go to comment column
+     (and (looking-at "\\s<\\(\\S<\\|\\'\\)") comment-column)
+     ;; the rest goes to 4
+     (or 4))))
+(add-hook 'asm-mode-hook #'fix-asm-mode)
