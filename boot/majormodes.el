@@ -50,7 +50,7 @@
      ;; triple-comments go all the way left
      (and (looking-at "\\s<\\s<\\s<") 0)
      ;; special directives go all the way left
-     (and (looking-at "c?global\\|section\\|org\\|seek\\|include\\|lib\\|define\\|defgroup\\|defvars\\|extern\\|if\\|ifdef\\|else\\|endif\\|module\\|public\\|default\\|align\\|INIT_..X") 0)
+     (and (looking-at "c?global\\|section\\|include\\|lib\\|define\\|defgroup\\|defvars\\|extern\\|if\\|ifdef\\|else\\|endif\\|module\\|public\\|default\\|INIT_..X") 0)
      ;; single-comments go to comment column
      (and (looking-at "\\s<\\(\\S<\\|\\'\\)") comment-column)
      ;; the rest goes to 4
