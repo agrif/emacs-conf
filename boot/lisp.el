@@ -1,3 +1,5 @@
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+
 ;; paredit for schemes
 (use-package paredit
   :diminish

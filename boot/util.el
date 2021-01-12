@@ -1,11 +1,16 @@
 ;; general emacs lisp code utilities
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+
+(eval-when-compile
+  (package-initialize)
+  (require 'use-package))
 
 ;; make sure our path is setup
 (use-package exec-path-from-shell
   :hook (after-init . exec-path-from-shell-initialize))
 
 (defun get-hostname ()
-  (car (split-string system-name "[.]")))
+  (car (split-string (system-name) "[.]")))
 
 (defun anduril-p ()
   (string-equal (get-hostname) "anduril"))

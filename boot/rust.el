@@ -1,3 +1,5 @@
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+
 (use-package rust-mode
   :hook (rust-mode . (lambda ()
                        (set (make-local-variable 'compile-command)

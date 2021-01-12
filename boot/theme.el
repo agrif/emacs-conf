@@ -1,3 +1,5 @@
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+
 ;; moe!
 (use-package moe-theme
   :demand

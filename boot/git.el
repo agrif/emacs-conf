@@ -1,3 +1,5 @@
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+
 (use-package gist)
 (use-package magit
   :bind ("C-x g" . magit-status))

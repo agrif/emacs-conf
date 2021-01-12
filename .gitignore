@@ -5,3 +5,5 @@
 /tramp
 /network-security.data
 /.last-package-update-day
+/transient
+*.elc

@@ -1,3 +1,5 @@
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+
 ;; force c++ mode for swig files
 (add-to-list 'auto-mode-alist '("\\.i\\'" . c++-mode))
 
@@ -20,8 +22,9 @@
 (use-package jinja2-mode)
 
 ;; not in the package repos!
-(add-to-list 'load-path "~/.emacs.d/boot/extern/ferm-mode")
-(require 'ferm-mode)
+(eval-and-compile
+  (add-to-list 'load-path "~/.emacs.d/boot/extern/ferm-mode")
+  (require 'ferm-mode))
 
 (defun reformat-verilog-on-auto ()
   (verilog-indent-buffer))

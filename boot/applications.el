@@ -1,3 +1,5 @@
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+
 ;; pianobar
 (use-package pianobar
   :bind ("C-c p" . pianobar))
