@@ -1,6 +1,6 @@
 (provide 'ensure-use-package)
 
-(eval-when-compile
+(eval-and-compile
   ;; we sort of depend on use-package always being here, so, install it.
   (package-initialize)
   (unless (package-installed-p 'use-package)

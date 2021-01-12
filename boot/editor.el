@@ -1,4 +1,4 @@
-(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package")
 
 ;; editorconfig.org
 (use-package editorconfig

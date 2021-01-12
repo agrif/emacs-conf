@@ -1,6 +1,6 @@
 .PHONY : all clean
 
-FILES=init.el custom.el boot/*.el boot/extern/ferm-mode/*.el
+FILES=init.el boot/*.el boot/extern/ferm-mode/*.el
 
 all :
 	emacs -batch -f batch-byte-compile ${FILES}

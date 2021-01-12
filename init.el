@@ -3,24 +3,24 @@
 ;;(package-initialize)
 
 ;; store customized settings in their own file
-(setq custom-file "~/.emacs.d/custom.el")
+(setq custom-file "~/.emacs.d/custom")
 (load custom-file)
 
 ;; load our package management and general utility code first
-(load "~/.emacs.d/boot/package.el")
-(load "~/.emacs.d/boot/util.el")
+(load "~/.emacs.d/boot/package")
+(load "~/.emacs.d/boot/util")
 
 ;; now load everything else
-(load "~/.emacs.d/boot/majormodes.el")
-(load "~/.emacs.d/boot/editor.el")
-(load "~/.emacs.d/boot/compile.el")
-(load "~/.emacs.d/boot/theme.el")
-(load "~/.emacs.d/boot/applications.el")
-(load "~/.emacs.d/boot/git.el")
-(load "~/.emacs.d/boot/python.el")
-(load "~/.emacs.d/boot/lisp.el")
-(load "~/.emacs.d/boot/rust.el")
-(load "~/.emacs.d/boot/haskell.el")
+(load "~/.emacs.d/boot/majormodes")
+(load "~/.emacs.d/boot/editor")
+(load "~/.emacs.d/boot/compile")
+(load "~/.emacs.d/boot/theme")
+(load "~/.emacs.d/boot/applications")
+(load "~/.emacs.d/boot/git")
+(load "~/.emacs.d/boot/python")
+(load "~/.emacs.d/boot/lisp")
+(load "~/.emacs.d/boot/rust")
+(load "~/.emacs.d/boot/haskell")
 
 ;; otherwise, .v would mean coq
 ;; this is here to override proof general, loaded earlier

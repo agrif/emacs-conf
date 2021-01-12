@@ -1,5 +1,5 @@
 ;; general emacs lisp code utilities
-(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package")
 
 (eval-when-compile
   (package-initialize)

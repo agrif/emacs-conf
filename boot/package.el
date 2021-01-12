@@ -11,7 +11,7 @@
 (if (boundp 'gnutls-algorithm-priority)
     (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3"))
 
-(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package.el")
+(require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package")
 
 ;; if we mention it, default to trying to install it
 (require 'use-package-ensure)
