@@ -2,7 +2,6 @@
 (require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package")
 
 (eval-when-compile
-  (package-initialize)
   (require 'use-package))
 
 ;; make sure our path is setup

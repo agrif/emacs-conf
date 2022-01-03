@@ -48,9 +48,9 @@
               ([remap xref-find-references] . lsp-ui-peek-find-references))
   :custom (lsp-ui-doc-max-height 20))
 
-(use-package company-lsp
-  :demand ;; or it would never be loaded
-  :config (push 'company-lsp company-backends))
+;; (use-package company-lsp
+;;   :demand ;; or it would never be loaded
+;;   :config (push 'company-lsp company-backends))
 
 ;; a few other fun things
 (electric-pair-mode 1)
