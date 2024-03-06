@@ -26,6 +26,12 @@
   (add-to-list 'load-path "~/.emacs.d/boot/extern/ferm-mode")
   (require 'ferm-mode))
 
+;; there is a capnproto mode in the repos, but it sucks, so use this
+;; well, this sucks too. but it sucks less.
+(eval-and-compile
+  (add-to-list 'load-path "~/.emacs.d/boot/extern/capnp-mode")
+  (require 'capnp-mode))
+
 (defun reformat-verilog-on-auto ()
   (verilog-indent-buffer))
 (defun undo-verilog-autos (&rest args)

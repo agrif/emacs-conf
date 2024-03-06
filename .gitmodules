@@ -1,3 +1,6 @@
 [submodule "boot/ferm-mode"]
 	path = boot/extern/ferm-mode
 	url = https://github.com/danil/ferm-mode.git
+[submodule "boot/extern/capnp-mode"]
+	path = boot/extern/capnp-mode
+	url = https://github.com/popham/capnp-mode.git
