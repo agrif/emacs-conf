@@ -3,7 +3,7 @@
 ;;(package-initialize)
 
 ;; store customized settings in their own file
-(setq custom-file "~/.emacs.d/custom")
+(setq custom-file "~/.emacs.d/custom.el")
 (load custom-file)
 
 ;; load our package management and general utility code first
