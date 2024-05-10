@@ -6,4 +6,5 @@
 /network-security.data
 /.last-package-update-day
 /transient
+/.lsp-session-v1
 *.elc

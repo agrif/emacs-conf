@@ -14,7 +14,7 @@
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(string-inflection bnf-mode verilog-mode platformio-mode intero haskell-mode racer cargo flycheck-rust rust-mode geiser paredit git-link magit gist fireplace proof-general wolfram-mode mingus pianobar powerline moe-theme lorem-ipsum flycheck autopair company-lsp lsp-ui lsp-mode company editorconfig jinja2-mode purescript-mode vala-mode toml-mode nginx-mode dockerfile-mode cython-mode yaml-mode io-mode glsl-mode markdown-mode exec-path-from-shell diminish auto-package-update use-package))
+   '(rustic string-inflection bnf-mode verilog-mode platformio-mode intero haskell-mode racer cargo flycheck-rust rust-mode geiser paredit git-link magit gist fireplace proof-general wolfram-mode mingus pianobar powerline moe-theme lorem-ipsum flycheck autopair company-lsp lsp-ui lsp-mode company editorconfig jinja2-mode purescript-mode vala-mode toml-mode nginx-mode dockerfile-mode cython-mode yaml-mode io-mode glsl-mode markdown-mode exec-path-from-shell diminish auto-package-update use-package))
  '(rust-rustfmt-switches '("--edition" "2021"))
  '(safe-local-variable-values
    '((compilation-search-path "/home/agrif/devel/minecraft/overviewer/src/")))

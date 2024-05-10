@@ -39,7 +39,18 @@
   (setq company-show-numbers t))
 
 ;; language server protocol support
-(use-package lsp-mode)
+(use-package lsp-mode
+  :custom
+  (lsp-keymap-prefix "C-c e")
+  (lsp-rust-analyzer-cargo-watch-command "clippy")
+  (lsp-eldoc-render-all t)
+  (lsp-rust-analyzer-lens-enable nil)
+  :config
+  ;; https://www.reddit.com/r/rust/comments/w7cf7d/rustanalyzer_tip_open_docsrs_for_the_symbol_under/ihpowqd/
+  (lsp-define-conditional-key
+    lsp-command-map "ho"
+    lsp-rust-analyzer-open-external-docs "open external docs"
+    '(string= (lsp-buffer-language) "rust")))
 (diminish 'eldoc-mode)
 
 (use-package lsp-ui
