@@ -1,5 +1,6 @@
 (require 'ensure-use-package "~/.emacs.d/boot/ensure-use-package")
 
 (use-package rustic
-  :config
-  (setq rustic-format-on-save t))
+  :custom
+  (rustic-format-trigger 'on-save)
+  (rustic-format-display-method 'ignore))

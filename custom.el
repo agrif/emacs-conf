@@ -10,7 +10,7 @@
  '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-major-mode 'emacs-lisp-mode)
- '(lsp-ui-doc-max-height 20 t nil "Customized with use-package lsp-ui")
+ '(lsp-ui-doc-max-height 20 nil nil "Customized with use-package lsp-ui")
  '(make-backup-files nil)
  '(menu-bar-mode nil)
  '(package-selected-packages
@@ -21,6 +21,7 @@
  '(scroll-bar-mode nil)
  '(tab-width 4)
  '(tool-bar-mode nil)
+ '(tooltip-mode nil)
  '(verilog-auto-delete-trailing-whitespace t)
  '(verilog-auto-endcomments nil)
  '(verilog-auto-inst-param-value t)
