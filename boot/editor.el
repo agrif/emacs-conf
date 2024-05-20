@@ -46,6 +46,7 @@
   (lsp-eldoc-render-all t)
   (lsp-rust-analyzer-lens-enable nil)
   (lsp-rust-show-hover-context nil)
+  (lsp-eldoc-enable-hover nil)
   :config
   ;; https://www.reddit.com/r/rust/comments/w7cf7d/rustanalyzer_tip_open_docsrs_for_the_symbol_under/ihpowqd/
   (lsp-define-conditional-key
