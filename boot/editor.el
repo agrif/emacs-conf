@@ -59,7 +59,9 @@
   :hook (lsp-mode . lsp-ui-mode)
   :bind (:map lsp-ui-mode-map
               ([remap xref-find-references] . lsp-ui-peek-find-references))
-  :custom (lsp-ui-doc-max-height 20))
+  :custom
+  (lsp-ui-doc-max-height 20)
+  (lsp-ui-doc-enable nil))
 
 ;; (use-package company-lsp
 ;;   :demand ;; or it would never be loaded
