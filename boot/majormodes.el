@@ -45,6 +45,11 @@
          (find-file . undo-verilog-autos)))
 
 ;; https://stackoverflow.com/a/50855606
+(defcustom asm-instruction-column 4
+  "Column to indent instructions to."
+  :group 'asm
+  :type '(integer)
+  :local 't)
 (defun fix-asm-mode ()
   ;; no electric semicolons
   (local-unset-key (vector asm-comment-char))
@@ -59,9 +64,9 @@
      ;; triple-comments go all the way left
      (and (looking-at "\\s<\\s<\\s<") 0)
      ;; special directives go all the way left
-     (and (looking-at "c?global\\|section\\|include\\|lib\\|define\\|defgroup\\|defvars\\|extern\\|if\\|ifdef\\|else\\|endif\\|module\\|public\\|default\\|INIT_..X") 0)
+     ;(and (looking-at "c?global\\|section\\|include\\|lib\\|define\\|defgroup\\|defvars\\|extern\\|if\\|ifdef\\|else\\|endif\\|module\\|public\\|default\\|INIT_..X") 0)
      ;; single-comments go to comment column
      (and (looking-at "\\s<\\(\\S<\\|\\'\\)") comment-column)
-     ;; the rest goes to 4
-     (or 4))))
+     ;; the rest goes to asm-instruction-column
+     (or asm-instruction-column))))
 (add-hook 'asm-mode-hook #'fix-asm-mode)
